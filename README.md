@@ -1,41 +1,56 @@
-# O que é [Code in the Dark Brasil](http://codeinthedark.com)
-[Code in the Dark Brasil](http://codeinthedark.com) 
-é uma competição de front-end (HTML, CSS) onde cada participante compete para implementar um website somente com um screenshot como base. O problema é que não existe pré-visualização do que está sendo implementado, e não é permitido o uso de nenhuma outra ferramenta a não sei o quer for fornecida para o desafio. O ganhador é decidido por todos presentes no evento.
+# O que é [Code in the Dark](http://codeinthedark.com)
+[Code in the Dark](http://codeinthedark.com) é uma competição front-end (HTML, CSS), originalmente criada pela [Tictail](https://tictail.com), onde cada competidor precisa implementar um design de website dado somente com uma imagem da tela. A pegada é que nenhum preview do resultado é permitido durante a implementação, e nenhuma ferramenta de medição podem ser usadas. O vencedor é decidido pela platéia.
 
-Durante a competição, os participantes teram que usar o editor do Code in the Dark, que [pode ser testado aqui](http://codeinthedark.com/editor).
+Durante a competição, os participantes tem que usar um editor customizado para o Code in the Dark, que [você pode testar aqui](http://codeinthedark.com/editor).
 
+# As Regras
 
-# As regras
-* Cada integrante recebe um pacote com o editor, que inclue um screenshot da página que deve ser implementada com HTML/CSS e qualquer assets adicional que deve ser necessário.
-* Não são permitidos o uso de iframe, frameworks, snippets ou outros assets, fora do que foi listado nas instruções. O site deve ser construído a partir do zero durante a competição.
-* O participante deve usar o editor em modo full screen, e não é permitido sair do editor ou usar quaisquer ferramentas.
-* Previews do que está sendo produzido são estritamente proibido, até que o tempo acabe.
-* Apos o termino dos 15 minutos, os participantes apresentão o resultado ao público do que foi feito, em seguida, começa a votção para decidir o vencedor.
+* Cada participante recebe um pacote do editor, que incluem uma imagem da tela da página que eles devem implementar com HTML/CSS e qualquer assets adicional que eles precisem.
+* Nenhum iframe, framework, snippet ou outro asset fora dos listados nas instruções são permitidos. O site deve ser construído do início durante a competição.
+* O participante deve ter o editor no modo full screen, e nunca será permitido sair dele ou usar qualquer ferramenta de medição.
+* Pré-visualização do resultado é extritamente proíbido até o tempo terminar.
+* Uma vez que os 15 minutos de templo se esgota cada participante apresenta seu resultado para a platéia, que votará no seu favorito para decidir o vencedor.
 
-# Organizar o próprio Code in the dark
-Code in the dark  é open sourced - você pode usar o editor e regras para fazer a sua própria competição. Para o seu próprio evento, deve fazer um pull request para o repositório principal para anunciar dentro do site [codeinthedark.com](http://codeinthedark.com). Por favor, leia e certifique-se que você entenda [a licença](https://github.com/codeinthedark/codeinthedark.github.io/blob/master/LICENSE) antes de usar  o nome ou o logo the Code in the Dark no seu evento.
+# Organizando seu próprio Code in the Dark
+Code in the Dark é open source - você pode usar o editor e as regras para sediar sua própria competição. Para isso, faça um pull request (seguindo essas [instruções](https://github.com/codeinthedark/codeinthedark.github.io#creating-the-pull-request)) nesse repositório para ser anunciado no site [codeinthedark.com](http://codeinthedark.com). Por favor leia e tenha certeza que você entendeu [a licensa](https://github.com/codeinthedark/codeinthedark.github.io/blob/master/LICENSE) antes de usar o logo e o nome Code in the Dark no seu evento.
 
-Leia as instruções antes abaixo sobre como realizar o evento. Se você tiver alguma pergunta ou precisar de alguma ajuda tipo foto da [hi-res](http://hi-res.net/), as melhores praticas ou em qualquer outra coisa, por favor não hesite em contactar-nos em hello@codeinthedark.com!
+Leia as instruções abaixo de como organizar o evento. Se você tiver qualquer questão ou precisar de qualquer ajuda como imagens de alta resolução, melhores práticas ou outra coisa, por favor não hesite em nos contatar pelo hello@codeinthedark.com!
 
-### Configurar a competição
-Cada participante traz o seu próprio laptop para o evento, mas é recomendável que você forneça um monitor externo para cada um. O monitor deve ser girado de costas para o participante e virado para a audiencia, de modo que eles podem acompanhar durante a competição a evolução  dos participantes.
-Dependendo do número de participantes você pode querer dividir a competição em varios rounds, com 10 participantes em cada grupo e uma grande final com os ganhadores de cada round anterios.
+### Criando a Competição
+Cada participante precisará levar seu próprio laptop para o evento, mas é recomendado que você forneça um monitor externo pra cada um deles. Esses monitores devem estar virados contra o competidor e em direção da platéia, assim eles poderão acompanhar a competição.
+Dependendo do número de competidores você deverá dividir a competição em múltiplos rounds, com 10 participantes em cada grupo e um desafio final contendo os top colocados dos rounds anteriores.
 
-O screenshot do site e assets deve ser preparados antecipadamente para ccda grupo (usar diferente websites para cada round) e também deve incluir o código do editor. Isto é recomendado para ter todos os arquivos disponiveis em um pendrive para todos participantes conseguirem copiar. Leia mais no [repositório do editor](https://github.com/codeinthedark/editor) em como preparar o asstes e configurar o editor.
+Imagens da tela do website e os assets devem ser preparados antecipdamente para cada grupo (use diferentes websites em cada round) e serão inclusos com o conjunto de arquivos do editor que cada um receberá. É recomendado ter os arquivos disponíveis em pen-drives USB que os participantes podem copiar seu conteúdo. Leia mais no [repositório do editor](https://github.com/codeinthedark/editor) sobre como preparar os assets e configurar o editor.
 
-Antes do round começar, ajude os participantes a iniciar o editor e colcoar os browser em **presentation mode** com a tela espelhada no monitor externo. 
-Certifique-se de que eles não começam codificação antes que o tempo começe.
+Antes do round começar, ajude os participantes a configurar o editor e tenha certeza que eles colocaram seus browsers em **modo de apresentação** com o espelhamento de tela configurado para a tela externa. Tenha certeza que eles não começem a codar antes do tempo iniciar.
 
-Uma vez que o público vai ser o juiz, deixe-os saber claramente quais são as regras para que eles possam identificar facilmente quem está trapaceando e desqualificá-los da competição.
+Uma vez que o público vai ser o juiz, deixe que eles saibam claramente as regras e assim eles poderão facilmente vigiar qualquer um que esteja trapaçeando e desqualificá-lo da competição.
 
-Quando você estiver pronto para inciar o round, faça uma contagem regresiva com todo mundo e inicie o timer que todos os concorrentes possam ver claramente. Após acabar os 15 minutos os participantes deve para de codificar, e salvar o código em arquivos para que sejá averto em um browser favorito para todo mundo votar. Use um serviço de voto tipo https://www.mentimeter.com/ para tornar mais fácil para que todos possam votar.
+Quando você estiver pronto para iniciar o round, faça uma contagem regressiva e configure o relógio em 15 minutos deixando visível para a platéia. Uma vez que os 15 minutos acabarem diga a todos pra pararem de codar, salvar seus arquivos e abrir seu navegador preferido para todos começarem a votar. Use um serviço de votação como https://www.mentimeter.com/ para facilitar a todos a votar.
 
-### Instruções aos concorrentes
-Imprimir as seguintes instruções e torná-la disponível para cada concorrente, por exemplo, anexá-lo ao monitor a sua frente, o que é voltado para o público.
+### Instruções para os Participantes
+Imprima as seguintes instruções e disponibilize pra cada participante ver, por exemplo colocando no monitor a frente dele, que está virado para a platéia.
 
-1. Ligue o monitor e coloque em **screen mirroring**.
-2. Eseprar a equipe técnica para transferir os arquivos do USB para o seu computador.
-3. Apenas abra o editor de arquivo **index.html**  e configure seu navegador para **presentation mode**.
-4. O editor contém mais instruções sobre assets e como salvar o arquivo final.
-5. Quando o tempo se esgotar, tirar as mãos do teclado.
+1. Conecte o monitor e configure-o para o **espelhamento de tela**.
+2. Espere a equipe transferir os arquivos do pendrive USB para seu computador.
+3. Só abra o editor o arquivo **index.html** e configure seu browser para o **modo de apresentação**.
+4. O editor contém instuções adicionais sobre os assets e como salvar o arquivo final.
+5. Quando o tempo acabar, remova suas mãos do teclado.
 6. Não saia do editor durante a competição!
+
+### Criando o Pull Request
+Para ter seu evento aparecendo no site [codeinthedark.com](http://codeinthedark.com), crie um pull request nesse repositório adicionando o código abaixo da seção "Community Organized Events":
+
+```html
+<p>
+[CITY] · [DATE] · <a href="[LINK_TO_RSVP_PAGE]" target="_blank">RSVP</a>
+</p>
+```
+
+Replace `[CITY]`, `[DATE]` and `[LINK_TO_RSVP_PAGE]` with your information. Here's an example:
+
+```html
+<p>
+Stockholm · January 22, 2016 · <a href="http://example.com" target="_blank">RSVP</a>
+</p>
+```
