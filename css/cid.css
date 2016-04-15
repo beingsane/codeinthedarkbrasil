@@ -7,13 +7,15 @@ body {
   padding-top: 30px;
   -webkit-font-smoothing: antialiased;
   font-family: "open sans", helvetica, arial, sans-serif;
+  color: #ccc;
 }
 
 h2, label {
   text-transform: uppercase;
-  color: #555;
+  color: #3e8e64;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.5em;
+  line-height: 1.7em;
   margin: 0;
 }
 
@@ -30,20 +32,32 @@ li, h3 {
   margin: 0;
 }
 
+a, a:hover{
+  color: #3e8e64;
+  text-decoration: none;
+}
+
 .part {
   padding: 0px 10px 100px 10px;
 }
 
 .sponsors img {
-  margin: 1em 2em 0 2em;
+  margin: 1.5em 0 0;
   opacity: 0.8;
   -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   zoom: 0.5;
+  width: 80%;
+  max-width: 675px;
 }
 
 .sponsors img:hover {
   opacity: 1.0;
 }
+
+/****************************************************************************
+ * Logo
+ ***************************************************************************/
 
 #logo {
   max-width: 35%;
@@ -90,6 +104,10 @@ li, h3 {
     opacity:1;
   }
 }
+
+/****************************************************************************
+ * Video-player
+ ***************************************************************************/
 
 .video-player {
   position: relative;
@@ -166,11 +184,6 @@ li, h3 {
   z-index: 1000;
 }
 
-.register {
-  margin: 20px 0;
-  font-size: 150%;
-}
-
 .location {
   text-transform: none;
   color: white;
@@ -186,7 +199,9 @@ li, h3 {
   text-decoration: underline;
 }
 
-.register:hover {
+.register {
+  margin: 20px 0;
+  font-size: 150%;
 }
 
 .register a {
@@ -202,6 +217,21 @@ li, h3 {
   text-decoration: none;
   background-color: #37b87C;
 }
+
+.comofunciona{
+  width: 60%;
+  margin: 0px auto;
+}
+
+.comofunciona h2 {
+    margin-bottom: 0.5em;
+}
+
+.edicao{
+  font-size: 3.2em;
+  line-height: 2em;
+}
+
 
 /****************************************************************************
  * Newsletter Subscribe Form
