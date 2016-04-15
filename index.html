@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <title>
@@ -41,7 +41,7 @@
 
         <h2>Onde?</h2>
         <p>Google Brasil (Escritório São Paulo)</p>
-        <p>Av. Brg. Faria Lima, 3477 - Itaim Bibi, São Paulo/SP</p>
+        <p>Av. Brg. Faria Lima, 3477 - Itaim Bibi, São Paulo/SP (<label class="link" for="lightbox-map">mapa</label>)</p>
 
         <h2>Quanto?</h2>
         <p>Gratúito (Inscrições em Breve)</p>
@@ -75,8 +75,8 @@
             <h2>Como funciona a competição?</h2>
             <p>Um total de 16 desenvolvedores irão competir em 4 baterias. Em cada round, 4 competidores se enfrentam. Os vencedores se enfrentarão em uma grande final. Sua missão é produzir o HTML e CSS de um layout. Você não irá conhecer o layout - sem previews neste jogo, amigo - só irá receber uma imagem como guia para o que tem que ser produzido no início de cada bateria. </p>
             <p>Sem Photoshop!</p>
-            <p> Os competidores de cada bateria serão convidados para o palco principal, e sentarão cada um em um computador. Irá ter o mesmo editor aberto (ele pode ser testado <a href="/editor/">aqui</a>) em cada computador. Não será permitido sair deste editor até o final de cada rodada. Todo seu código estará sendo replicado em um monitor externo voltado para o publico, que irá acompanhar o que os competidores estiverem fazendo.</p>
-            <p> Nossa equipe vai disparar o conômetro e todos competidores teram 15 minutos para superar seus limites e apresentar o melhor trabalho. Ao final nossa equipe irá abrir todos os layouts em um browser para início da votação do público. Simples, certo? Venha se divertir com a gente.</p>
+            <p> Os competidores de cada bateria serão convidados para o palco principal, e sentarão cada um em um computador. Terá o mesmo editor aberto (ele pode ser testado <a href="/editor/">aqui</a>) em cada computador. Não será permitido sair deste editor até o final de cada rodada. Todo seu código estará sendo replicado em um monitor externo voltado para o publico, que irá acompanhar o que os competidores estiverem fazendo.</p>
+            <p> Nossa equipe vai disparar o conômetro e todos competidores terão 15 minutos para superar seus limites e apresentar o melhor trabalho. Ao final nossa equipe irá abrir todos os layouts em um navegador para início da votação do público. Simples, certo? Venha se divertir com a gente.</p>
       </div>
 
 
@@ -106,9 +106,16 @@
         <p>Code In The Dark BR - Edição São Paulo 2016</p>
       </div>
 
-
     <script src="/js/jquery/dist/jquery.min.js"></script>
     <script src="/js/ajaxchimp/jquery.ajaxchimp.js"></script>
     <script src="/js/scripts.js"></script>
+
+    <input type="checkbox" name="lightbox" id="lightbox-map">
+    <label for="lightbox-map" class="lightbox js-lightbox">
+      <div class="lightbox-content">
+        <label for="lightbox-map" class="lightbox-close"></label>
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.499310849904!2d-46.68407718536947!3d-23.58641938467051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle+S%C3%A3o+Paulo!5e0!3m2!1spt-BR!2sbr!4v1460696226014" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </label>
   </body>
 </html>
