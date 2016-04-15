@@ -339,3 +339,21 @@ input#lightbox-map:checked + .lightbox {
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .edicao {
+    font-size: 2.2em;
+  }
+  .comofunciona {
+    width: calc(100% - 20px);
+  }
+  #newsletter-subscribe input {
+    width: calc(100% - 20px);
+  }
+  #newsletter-subscribe button {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
