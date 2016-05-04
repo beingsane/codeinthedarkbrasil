@@ -25,3 +25,19 @@ $.ajaxChimp.translations['pt-BR'] = {
 $("#newsletter-subscribe").ajaxChimp({
     language: 'pt-BR'
 });
+
+
+$(".accordion").each(function(){
+    var $currentItem;
+
+    $(this).on('click', '.line', function(e){
+        if($currentItem && $currentItem.index() == $(e.currentTarget).index()){
+            $currentItem.removeClass('open');
+            $currentItem = null;
+            return
+        }
+
+        if($currentItem) $currentItem.removeClass('open');
+        $currentItem = $(e.currentTarget).addClass('open');
+    });
+});

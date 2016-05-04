@@ -367,3 +367,95 @@ input#lightbox-map:checked + .lightbox {
     margin-left: 0;
   }
 }
+
+
+/****************************************************************************
+ * Accordion
+ ***************************************************************************/
+
+
+.accordion{
+  width: 60%;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion{
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+.accordion .line{
+  font-size: 1em;
+  border-bottom: 1px solid rgba(255,255,255,.7);
+  transition: background 1s ease-in;
+}
+
+.accordion .line:last-child{
+  border-bottom: none;
+
+}
+
+.accordion .line.open{
+  background: #159064;
+}
+
+.accordion .line .line-head{
+  position: relative;
+  padding: 10px 43px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion .line .line-head:before{
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  background: #FFF;
+  width: 20px;
+  height: 4px;
+  font-size: 2.5em;
+  margin-top: -2px;
+}
+
+.accordion .line .line-head:after{
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  background: #FFF;
+  width: 4px;
+  height: 20px;
+  font-size: 2.5em;
+  margin-left: 8px;
+  margin-top: -10px;
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+.accordion .line.open .line-head:after{
+  opacity: 0;
+}
+
+.accordion .line .line-content{
+  padding: 10px 43px 20px;
+  display: block;
+}
+
+.accordion .line .line-collapse{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-in;
+}
+
+.accordion .line.open .line-collapse{
+  max-height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion .line.open .line-collapse{
+    max-height: 350px;
+  }
+}
