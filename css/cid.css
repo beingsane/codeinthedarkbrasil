@@ -398,12 +398,13 @@ input#lightbox-map:checked + .lightbox {
 }
 
 .accordion .line.open{
-  background: #159064;
+  background: rgba(62, 142, 100, 0.51);
 }
 
 .accordion .line .line-head{
+  display: block;
   position: relative;
-  padding: 10px 43px;
+  padding: 10px 10px 10px 40px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -439,19 +440,17 @@ input#lightbox-map:checked + .lightbox {
   opacity: 0;
 }
 
-.accordion .line .line-content{
-  padding: 10px 43px 20px;
-  display: block;
-}
-
 .accordion .line .line-collapse{
+  display: block;
   overflow: hidden;
   max-height: 0;
+  padding: 0 20px 0 40px;
   transition: max-height .4s ease-in;
 }
 
 .accordion .line.open .line-collapse{
   max-height: 150px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
