@@ -41,3 +41,9 @@ $(".accordion").each(function(){
         $currentItem = $(e.currentTarget).addClass('open');
     });
 });
+
+$("[data-go-to]").on('click', function(e){
+    var $elem = $(e.currentTarget),
+        id = "#" + $elem.data("go-to");
+    $('html,body').animate({ scrollTop: $(id).offset().top }, 800);
+});
