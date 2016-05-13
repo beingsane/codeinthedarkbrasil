@@ -538,7 +538,7 @@ input#lightbox-map:checked + .lightbox {
 .accordion .line{
   font-size: 1em;
   border-bottom: 1px solid rgba(255,255,255,.7);
-  transition: background .4s ease-in;
+  transition: background .2s ease-out;
 }
 
 .accordion .line:last-child{
@@ -547,7 +547,8 @@ input#lightbox-map:checked + .lightbox {
 }
 
 .accordion .line.open{
-  background: rgba(62, 142, 100, 0.51);
+  background: #159064;
+  transition: background .7s ease-in;
 }
 
 .accordion .line .line-head{
@@ -593,13 +594,14 @@ input#lightbox-map:checked + .lightbox {
   display: block;
   overflow: hidden;
   max-height: 0;
-  padding: 0 20px 0 40px;
-  transition: max-height .4s ease-in;
+  padding-left: 20px;
 }
 
 .accordion .line.open .line-collapse{
+  display: block;
   max-height: 150px;
-  padding-bottom: 20px;
+  padding: 10px 43px 20px;
+  transition: max-height .5s ease-in;
 }
 
 @media screen and (max-width: 768px) {
