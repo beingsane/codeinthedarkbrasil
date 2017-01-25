@@ -11,8 +11,12 @@ body
   -webkit-font-smoothing antialiased
   background #000
   color #ccc
-  padding 30px 0
-
+  padding 80px 0
+  
+.body-bg
+  background url(../img/header-bg.png)
+  background-position center top
+  
 .container
   max-width 1200px
   margin 0 auto
@@ -25,9 +29,9 @@ body
   &:after
     clear both
 .logo
-  text-align right
+  text-align center
   img
-    max-width 380px
+    max-width 383px
     heigh auto
 
 .col-50
@@ -37,36 +41,66 @@ body
 
 .main-informations
   text-align center
-  h2
-    color white
-    font-size 32px
-    font-weight 300
-    margin-bottom 20px
-    span
-      display block
-      font-weight 700
-      line-height 1.2
-      font-size 16px
-  p
-    color #ccc
-    font-size 14px
-  h3
-    margin-top 20px
-    color $cdd-light-green
+.header-title
+  color white
+  font-size 44px
+  font-weight 300
+  margin-bottom 10px
+  span
+    display block
     font-weight 700
     line-height 1.2
-    font-size 16px
-  h4
-    margin-bottom 20px
+    font-size 23px
+    letter-spacing 3px
+.header-address
+  color #fff
+  font-size 16px
+.header-inscription
+  margin 30px 0
+  color $cdd-light-green
+  font-weight 700
+  line-height 1.2
+  font-size 20px
+  span
+    display block
     color $cdd-light-green
     font-weight 300
     line-height 1.2
-    font-size 14px
+    font-size 16px
+      
+.social-networks-label
+  font-size 16px
+  color #fff
+  position relative
+  margin-bottom 10px
+  display inline-block
+  &:before
+  &:after
+    content ''
+    position absolute
+    height 1px
+    width 25px
+    top 0
+    bottom 0
+    margin auto
+    background #fff
+  &:before
+    left -30px
+  &:after
+    right -30px
 .social-networks
   text-align center
+  margin-bottom 30px
   li
     display inline-block
     margin 0 10px
+.partner-label
+  font-weight 300
+  font-size 16px
+  color white
+  display block
+  margin-top 10px
+  margin-bottom 5px
 .mosaic
   margin-top 30px
   .mosaic-img
