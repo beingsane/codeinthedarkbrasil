@@ -9,17 +9,19 @@ $cdd-light-green = #00cc8d
 body
   font-family "open sans", helvetica, arial, sans-serif
   -webkit-font-smoothing antialiased
-  background #000
+  background-color #000
   color #ccc
   padding 80px 0
   
 .body-bg
-  background url(../img/header-bg.png)
+  background-image url(../img/header-bg.png)
+  background-repeat no-repeat
   background-position center top
   
 .container
   max-width 1200px
   margin 0 auto
+  padding 0 15px
 
 .clearfix
   &:before
@@ -101,6 +103,55 @@ body
   display block
   margin-top 10px
   margin-bottom 5px
+.expert
+  margin-top 40px
+.roles
+  ul
+    display table
+    width 100%
+  li
+    display table-cell
+    p, strong
+      opacity 0.3
+
+.large-date
+  position relative
+  z-index 2
+  strong
+    font-size 300px
+    font-weight 600
+    line-height 1
+  span
+    font-size 60px
+    font-weight 300
+.video
+  position relative
+  display block
+  img
+    display block
+  &:before
+  &:after
+    content ''
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    margin auto
+  &:after
+    width 45px
+    height 61px
+    background url(../img/play-ico.png)
+    background-repeat no-repeat
+    background-position right
+    padding-left 10px
+  &:before
+    width 140px
+    height 140px
+    border-radius 50%
+    background #78b683
+    opacity 0.8
+    box-shadow 0px 0px 0px 40px rgba(#78b683, .7)
 .mosaic
   margin-top 30px
   .mosaic-img
