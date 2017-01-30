@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>
-        Code in the Dark Brasil
-    </title>
-
-    <meta name="description" content="Code in the Dark, você achava que sabia front-end. Code in the Dark é um conceito de competição de programação criado por Tictail.">
-    <meta name="author" content="Tictail">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/cid.css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-    <link rel="shortcut icon" href="/favicon.ico">
-
-    <script>
+<head>
+  <meta charset="UTF-8">
+  <title>Code in the Dark Brasil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+  <script async src="//www.google-analytics.com/analytics.js"></script>
+  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -23,199 +15,322 @@
 
       ga('create', 'UA-76242922-1', 'codeinthedark.com.br');
       ga('send', 'pageview');
+  </script>
+</head>
+<body class="body-bg">
+  <header class="container clearfix">
+    <h1 class="logo col-50">
+      <img src="assets/img/logo.png" alt="Logo Code In The Dark">
+    </h1>
+    <div class="col-50 main-informations">
+        <h2 class="header-title">
+          <span>2<sup>a</sup> EDIÇÃO</span>
+          10 de Março/2017
+        </h2>
+        <p class="header-address">na nova sede iMasters <br>
+        (Rua Oscar Freire, 2379)</p>
+        <h3 class="header-inscription">
+          INSCRIÇÕES EM BREVE
+          <span>EVENTO GRATUITO</span>
+        </h3>
 
-    </script>
-  </head>
 
-  <body>
-
-    <div id="top-background"></div>
-
-    <h1><img id="logo" src="img/logo.png" alt="Code In the Dark - Logo"></h1>
-
-    <h2 class="edicao">Edição Brasil</h2>
-
-    <section class="part informacoes" id="quando">
-      <h2>Quando?</h2>
-      <p class="data">01.07.2016, em São Paulo, no Google Brasil</p>
-      <p class="endereco">Av. Brg. Faria Lima, 3477 - Itaim Bibi, São Paulo/SP (<label class="link" for="lightbox-map">mapa</label>)</p>
-
-      <a href="http://www.eventick.com.br/code-in-the-dark-brasil" target="_blank" class="btn" >Inscrições Abertas</a>
-      <p>Inscrições gratuitas - Vagas limitadas</p>
-    </section>
-
-    <section class="part video">
-      <div id="video-container">
-        <div class="video-player" data-url="//player.vimeo.com/video/63318482?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1">
-          <img src="img/backdrop.png" alt="Code in the Dark">
-          <div class="video-player-backdrop"></div>
-          <div class="video-player-play"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="part comofunciona" id="como-funciona">
-      <h2>Como funciona a competição?</h2>
-      <p>Um total de 16 desenvolvedores(as) irão competir em 4 baterias. Em cada round, 4 competidores(as) se enfrentam. Quem vencer se classifica pra uma grande final. Sua missão é produzir o HTML e CSS de um layout. Você não irá conhecer o layout - sem previews neste jogo, amigo(a) - só irá receber uma imagem como guia para o que tem que ser produzido no início de cada bateria. </p>
-      <p>Sem Photoshop!</p>
-      <p> Os participantes de cada bateria serão convidados para o palco principal, e sentarão cada um em um computador. Todos terão o mesmo editor aberto (ele pode ser testado <a href="/editor/" target="_blank">aqui</a>) em cada computador. Não será permitido sair deste editor até o final de cada rodada. Todo seu código estará sendo replicado em um monitor externo voltado para o público, que irá acompanhar o que os competidores estiverem fazendo.</p>
-      <p> Nossa equipe vai disparar o conômetro e serão 15 minutos para superar seus limites e apresentar o melhor trabalho. Ao final nossa equipe irá abrir todos os layouts em um navegador para início da votação do público. Simples, certo? Venha se divertir com a gente.</p>
-    </section>
-
-    <section class="part regras" id="regras">
-      <span class="slot">
-        <h2>As Regras</h2>
-        <p>Sem previews</p>
-      </span>
-      <p class="slot"><img src="img/icon/time.svg" alt="Icone de tempo">15 minutos</p>
-      <p class="slot"><img src="img/icon/code.svg" alt="Icone de um browser">HTML/CSS</p>
-      <p class="slot"><img src="img/icon/winner.svg" alt="Icone da medalha de campeão">Um Campeão</p>
-    </section>
-
-    <section class="part" id="programacao">
-      <h2>Programação</h2>
-      <table class="table">
-        <tbody>
-          <tr>
-            <td>18:30</td>
-            <td>Credenciamento e inscrições para competir</td>
-          </tr>
-          <tr>
-            <td>19:30</td>
-            <td>Final das inscrições para competir e sorteio dos competidores</td>
-          </tr>
-          <tr>
-            <td>20:00</td>
-            <td>Batalha 01</td>
-          </tr>
-          <tr>
-            <td>20:30</td>
-            <td>Batalha 02</td>
-          </tr>
-          <tr>
-            <td>21:00</td>
-            <td>Batalha 03</td>
-          </tr>
-          <tr>
-            <td>21:30</td>
-            <td>Batalha 04</td>
-          </tr>
-          <tr>
-            <td>22:00</td>
-            <td>Batalha final</td>
-          </tr>
-          <tr>
-            <td>22:30</td>
-            <td>Encerramento do Evento</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="part sponsors">
-      <a href="http://developers.google.com" target="_blank"><img src="img/together_with_google_developers.png" alt="Google Developers"/></a>
-    </section>
-
-    <section class="part sub-sponsors">
-
-      <div class="co-organization">
-        <h3>Co-organização</h3>
-        <a href="http://frontinsampa.com.br" target="_blank"><img src="img/front-in-sampa.png" alt="Logomarca do Frontinsampa 2016 - Evento para desenvolvedores front-end em Sāo Paulo" /></a>
-      </div>
-
-      <div class="support">
-        <h3>Apoio</h3>
-        <a href="https://dev.twitter.com" target="_blank"><img src="img/TwitterLogo_white_small.png" alt="Site do Twitter Dev" /></a>
-      </div>
-
-      <div class="thanks">
-        <h3>Agradecimento especial</h3>
-        <div class="sponsors">
-          <a href="https://tictail.com/" target="_blank"><img class="tictail_logo" src="img/logo_tictail.png" alt="Tictail" /></a>
-          Para eventos oficiais anteriores <a href="http://codeinthedark.com/">Code in the Dark</a>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="part inscricao" id="inscricao">
-      <h2>Inscrição</h2>
-      <a href="http://www.eventick.com.br/code-in-the-dark-brasil" target="_blank" class="btn" >Inscrições Abertas</a>
-      <p>Inscrições gratuitas - Vagas limitadas</p>
-    </section>
-
-    <section class="part perguntas" id="perguntas">
-      <h2>Perguntas Frequentes</h2>
-      <ul class="accordion">
-        <li class="line">
-          <div class="line-head">Quem pode participar?</div>
-          <div class="line-collapse">O evento é focado apenas em desenvolvedores(as) front-end e isso será pré-requisito nas inscrições! De estagiário(a) a sênior, todos poderão participar.</div>
+        <span class="social-networks-label">Acompanhe nossas redes sociais</span>
+        <ul class="social-networks">
+          <li>
+            <a href="https://twitter.com/CodeintheDarkBR">
+              <img src="./assets/img/twitter-header.png" alt="Logo Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/codeinthedarkbr">
+              <img src="./assets/img/facebook-header.png" alt="Logo Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/codeinthedarkbrasil/">
+              <img src="./assets/img/instagram-header.png" alt="Logo Intagram">
+            </a>
+          </li>
+        </ul>
+        <span class="partner-label">Co-realizador</span>
+        <img src="./assets/img/imasters-header.png" alt="">
+    </div>
+  </header>
+  <section class="expert container clearfix">
+    <div class="col-50 roles">
+      <ul class="clearfix">
+        <li>
+          <strong>Regras</strong>
+          <p>Sem previews</p>
         </li>
-        <li class="line">
-          <div class="line-head">Posso ir apenas pra assistir?</div>
-          <div class="line-collapse">Na real, quem estiver lá vai poder interagir votando em cada rodada da competição. Além disso, caso não seja um dos(as) competidores, a oportunidade de fazer network vai ser incrível!</div>
+        <li>
+          <img src="assets/img/time-ico.png" alt="">
+          <p>15 min.</p>
         </li>
-        <li class="line">
-          <div class="line-head">Eu quero competir. Como será feita a escolha dos participantes das rodadas?</div>
-          <div class="line-collapse">Serão 16 competidores e, para participar, você precisará se inscrever no começo do evento. Se tivermos mais de 16 interessados, faremos um sorteio.</div>
+        <li>
+          <img src="assets/img/code-ico.png" alt="">
+          <p>HTML/CSS</p>
         </li>
-        <li class="line">
-          <div class="line-head">Posso usar meu editor super-mega-ultra-louco?</div>
-          <div class="line-collapse">Não. O editor será o do evento. Você pode <a href="/editor/" target="_blank">testá-lo aqui</a></div>
-        </li>
-        <li class="line">
-          <div class="line-head">Se eu for no FrontinSampa, já posso ir no evento sem me inscrever?</div>
-          <div class="line-collapse">Não. Você precisa se inscrever também no CodeintheDark. Mas quem for no FrontinSampa terá mais chances de participar!</div>
-        </li>
-        <li class="line">
-          <div class="line-head">Posso usar alguma ferramenta de medição de pixels, de cor ou qualquer outra coisa parecida?</div>
-          <div class="line-collapse">Definitivamente, não! Você só poderá ter acesso ao editor. Só. Mais nada!</div>
-        </li>
-        <li class="line">
-          <div class="line-head">Eu consigo ver o resultado do que eu estiver fazendo, né?</div>
-          <div class="line-collapse">Hahahahah não. Só código, sem preview ou visualização do resultado.</div>
-        </li>
-        <li class="line">
-          <div class="line-head">O público vai fazer o quê enquanto os competidores estiverem codando?</div>
-          <div class="line-collapse"><span class="line-content">Quem for pra assistir não vai só assistir! O público vai votar no melhor resultado e definir os vencedores de cada rodada</span></div>
-        </li>
-        <li class="line">
-          <div class="line-head">Quem for pra assistir, vai poder ajudar os participantes?</div>
-          <div class="line-collapse">Negativo! O público não vai poder dar pitaco e nem assoprar o que está vendo na tela para os participantes. Quem fizer isso, desclassificará automaticamente o competidor!</div>
+        <li>
+          <img src="assets/img/winner-ico.png" alt="">
+          <p>1 vencedor</p>
         </li>
       </ul>
-    </section>
+      <p class="large-date">
+        <strong>2017</strong>
+        <span>Quem vencerá?</span>
+      </p>
+    </div>
+    <div class="col-50">
+      <a class="video" href="https://www.facebook.com/codeinthedarkbr/videos/1759924110917477/">
+        <img src="assets/img/video-thumb.png" alt="Vídeo do evento">
+      </a>
+    </div>
+  </section>
+  <section class="description container has-title clearfix">
+    <h3 class="container-title">HELLO</h3>
+    <div class="col-50">
+      <p class="description-highlight">
+        Imagine uma competição assim: Vários
+        desenvolvedores(as) front-end  precisam codificar
+        uma página em apenas 15 minutos...
+        Até aí o desafio já é enorme, concorda? Agora
+        adicione o fato de que eles(as) não podem ver
+        o resultado da página no browser, somente o código
+        fonte, usando apenas HTML e CSS:
+        <strong>Esse é o Code in the Dark!</strong>
+      </p>
+    </div>
+    <div class="col-50">
+      <p>Um total de 16 desenvolvedores(as) irão competir em 4 baterias.
+      Em cada round, 4 competidores(as) se enfrentam. Quem vencer se
+      classifica pra uma grande final. Sua missão é produzir o HTML e CSS
+      de um layout. Você não irá conhecer o layout - sem previews neste
+      jogo, amigo(a) - só irá receber uma imagem como guia para o que tem
+      que ser produzido no início de cada bateria.</p>
 
-    <section class="part contato" id="contato">
-      <h2>Contato</h2>
-      <p>Dúvidas e mais informações: <a href="mailto:codeinthedarkbr@gmail.com">codeinthedarkbr@gmail.com</a></p>
-      <!-- Begin MailChimp Signup Form -->
-      <h3 class="title-subscribe">Cadastre-se para saber as novidades</h3>
-      <form action="//codeinthedark.us13.list-manage.com/subscribe/post?u=1c329548a1cf3f54d94031377&amp;id=dffe11db54" method="post" id="newsletter-subscribe" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div>
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Seu email" required>
-          <button type="submit" name="subscribe" id="mc-embedded-subscribe">Enviar</button>
-          <label for="mce-EMAIL" class="submit-msg"></label>
-        </div>
-      </form>
-      <!--End mc_embed_signup-->
-    </section>
+      <p>Sem Photoshop!</p>
 
-    <section class="part rodape">
-      <p>Code In The Dark BR - Edição São Paulo 2016</p>
-      <a href="http://pt-br.confcodeofconduct.com/" target="_blank">Código de conduta</a>
-    </section>
+      <p>Os participantes de cada bateria serão convidados para o palco principal,
+      e sentarão cada um em um computador. Todos terão o mesmo editor
+      aberto (ele pode ser testado aqui) em cada computador. Não será
+      permitido sair deste editor até o final de cada rodada. Todo seu código
+      estará sendo replicado em um monitor externo voltado para o público,
+      que irá acompanhar o que os competidores estiverem fazendo.</p>
 
-    <script src="/js/jquery/dist/jquery.min.js"></script>
-    <script src="/js/ajaxchimp/jquery.ajaxchimp.js"></script>
-    <script src="/js/scripts.js"></script>
+      <p>Nossa equipe vai disparar o conômetro e serão 15 minutos para superar
+      seus limites e apresentar o melhor trabalho. Ao final nossa equipe irá
+      abrir todos os layouts em um navegador para início da votação do público.
+      Simples, certo? Venha se divertir com a gente.</p>
+    </div>
+  </section>
+  <section class="mosaic clearfix">
 
-    <input type="checkbox" name="lightbox" id="lightbox-map">
-    <label for="lightbox-map" class="lightbox js-lightbox">
-      <div class="lightbox-content">
-        <label for="lightbox-map" class="lightbox-close"></label>
-        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.499310849904!2d-46.68407718536947!3d-23.58641938467051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle+S%C3%A3o+Paulo!5e0!3m2!1spt-BR!2sbr!4v1460696226014" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="./assets/img/mosaic/1.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="./assets/img/mosaic/2.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="./assets/img/mosaic/3.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="./assets/img/mosaic/4.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="./assets/img/mosaic/6.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="./assets/img/mosaic/7.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/9.jpeg" alt="">
+      <img src="assets/img/spacer.gif">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/10.jpeg" alt="">
+      <img src="assets/img/spacer.gif">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/11.jpeg" alt="">
+      <img src="assets/img/spacer.gif">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/12.jpeg" alt="">
+      <img src="assets/img/spacer.gif">
+    </div>
+    <div class="mosaic-item">
+      <img src="assets/img/spacer.gif">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/13.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/14.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/15.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/16.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/17.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img src="assets/img/spacer.gif" width="12" height="8" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img src="assets/img/spacer.gif" width="12" height="8" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img src="assets/img/spacer.gif" width="12" height="8" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/18.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+    <div class="mosaic-item">
+      <img class="mosaic-img" src="assets/img/mosaic/19.jpeg" alt="">
+      <img src="assets/img/spacer.gif" alt="">
+    </div>
+  </section>
+  <section class="staff has-title container">
+    <h2 class="container-title">STAFF</h2>
+    <a class="staff-member" href="https://twitter.com/elvisdetona">
+      <dl>
+        <dd class="staff-image">
+          <img src="./assets/img/elvis.png" alt="Sergio Nascimento">
+        </dd>
+        <dt class="staff-name">
+          Sergio Nascimento
+          @elvisdetona
+        </dt>
+      </dl>
+    </a>
+    <a class="staff-member" href="https://twitter.com/xhamps">
+      <dl>
+        <dd class="staff-image">
+          <img src="./assets/img/xhamps.png" alt="Raphael Araujo">
+        </dd>
+        <dt class="staff-name">
+          Raphael Araujo 
+          @Xhamps
+        </dt>
+      </dl>
+    </a>
+    <a class="staff-member" href="https://twitter.com/grippado">
+      <dl>
+        <dd class="staff-image">
+          <img src="./assets/img/grip.png" alt="Gabriel Gripp">
+        </dd>
+        <dt class="staff-name">
+          Gabriel Gripp
+          @grippado
+        </dt>
+      </dl>
+    </a>
+    <a class="staff-member" href="https://twitter.com/eduardojmatos">
+      <dl>
+        <dd class="staff-image">
+          <img src="./assets/img/edu.png" alt="Eduardo Matos">
+        </dd>
+        <dt class="staff-name">
+          Eduardo Matos
+          @eduardojmatos
+        </dt>
+      </dl>
+    </a>
+    <a class="staff-member" href="https://twitter.com/Ney_Simoes">
+      <dl>
+        <dd class="staff-image">
+          <img src="./assets/img/ney.png" alt="Ney Simões">
+        </dd>
+        <dt class="staff-name">
+          Ney Simões
+          @ney_simoes
+        </dt>
+      </dl>
+    </a>
+    <a class="staff-member" href="https://twitter.com/_diogorodrigues">
+      <dl>
+        <dd class="staff-image">
+          <img src="./assets/img/diogo.png" alt="Diogo Rodrigues">
+        </dd>
+        <dt class="staff-name">
+          Diogo Rodrigues
+          @_diogorodrigues
+        </dt>
+      </dl>
+    </a>
+  </section>
+  <section class="faq has-title container">
+    <h2 class="container-title">FAQ</h2>
+    <input type="radio" id="quest-1" name="quest">
+    <label class="faq-quest" for="quest-1">
+      <p class="quest-title">Quem pode participar?</p>
+      <p class="quest-response">O evento é focado apenas em desenvolvedores(as) front-end e isso será pré-requisito nas inscrições! De estagiário(a) a sênior, todos poderão participar.</p>
     </label>
-  </body>
+    <input type="radio" id="quest-2" name="quest">
+    <label class="faq-quest" for="quest-2">
+      <p class="quest-title">Posso ir apenas pra assistir?</p>
+      <p class="quest-response">Na real, quem estiver lá vai poder interagir votando em cada rodada da competição. Além disso, caso não seja um dos(as) competidores, a oportunidade de fazer network vai ser incrível!</p>
+    </label>
+    <input type="radio" id="quest-3" name="quest">
+    <label class="faq-quest" for="quest-3">
+      <p class="quest-title">Eu quero competir. Como será feita a escolha dos participantes das rodadas?</p>
+      <p class="quest-response">Serão 16 competidores e, para participar, você precisará se inscrever no começo do evento. Se tivermos mais de 16 interessados, faremos um sorteio.</p>
+    </label>
+    <input type="radio" id="quest-4" name="quest">
+    <label class="faq-quest" for="quest-4">
+      <p class="quest-title">Posso usar meu editor super-mega-ultra-louco?</p>
+      <p class="quest-response">Não. O editor será o do evento. Você pode <a href="/editor/" target="_blank">testá-lo aqui</a></p>
+    </label>
+    <input type="radio" id="quest-5" name="quest">
+    <label class="faq-quest" for="quest-5">
+      <p class="quest-title">Preciso levar meu super notebook para participar?</p>
+      <p class="quest-response">Não. Cada participante terá um computador a disposição com a mesma característica para todos.</p>
+    </label>
+    <input type="radio" id="quest-6" name="quest">
+    <label class="faq-quest" for="quest-6">
+      <p class="quest-title">Se eu for no FrontinSampa, já posso ir no evento sem me inscrever?</p>
+      <p class="quest-response">Não. Você precisa se inscrever também no CodeintheDark. Mas quem for no FrontinSampa terá mais chances de participar!</p>
+    </label>
+    <input type="radio" id="quest-7" name="quest">
+    <label class="faq-quest" for="quest-7">
+      <p class="quest-title">Posso usar alguma ferramenta de medição de pixels, de cor ou qualquer outra coisa parecida?</p>
+      <p class="quest-response">Definitivamente, não! Você só poderá ter acesso ao editor. Só. Mais nada!</p>
+    </label>
+    <input type="radio" id="quest-8" name="quest">
+    <label class="faq-quest" for="quest-8">
+      <p class="quest-title">Eu consigo ver o resultado do que eu estiver fazendo, né?</p>
+      <p class="quest-response">Hahahahah não. Só código, sem preview ou visualização do resultado.</p>
+    </label>
+    <input type="radio" id="quest-9" name="quest">
+    <label class="faq-quest" for="quest-9">
+      <p class="quest-title">O público vai fazer o quê enquanto os competidores estiverem codando?</p>
+      <p class="quest-response">Quem for pra assistir não vai só assistir! O público vai votar no melhor resultado e definir os vencedores de cada rodada</p>
+    </label>
+    <input type="radio" id="quest-10" name="quest">
+    <label class="faq-quest" for="quest-10">
+      <p class="quest-title">Quem for pra assistir, vai poder ajudar os participantes?</p>
+      <p class="quest-response">Negativo! O público não vai poder dar pitaco e nem assoprar o que está vendo na tela para os participantes. Quem fizer isso, desclassificará automaticamente o competidor!</p>
+    </label>
+  </section>
+</body>
 </html>
