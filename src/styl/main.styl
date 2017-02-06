@@ -173,12 +173,16 @@ body
 .has-title
   position relative
   margin-top 20px
-  padding-top 180px
+  padding-top 80px
+  +above(520px)
+    padding-top 110px
+  +above(720px)
+    padding-top 180px
 .container-title
   line-height 1
   position absolute
   text-align center
-  font-size 248px
+  font-size 110px
   font-weight 600
   opacity 0.8
   color #242424
@@ -186,6 +190,10 @@ body
   left 0
   right 0
   margin 0 auto
+  +above(520px)
+    font-size 150px
+  +above(720px)
+    font-size 248px
 
 
 .mosaic
@@ -194,7 +202,18 @@ body
   overflow hidden
   position relative
   float left
-  width calc(100%/7)
+  width calc(100%/3)
+  &.tablet
+  &.desktop
+    display none
+  +above(520px)
+    width calc(100%/5)
+    &.tablet
+      display block
+  +above(720px)
+    width calc(100%/7)
+    &.desktop
+      display block
   &:before
     content ''
     display block
@@ -232,6 +251,7 @@ body
 .staff-member
   display inline-block
   width 150px
+  margin-bottom 40px
   &:not(:last-child)
     margin-right 20px
   &:hover
@@ -351,3 +371,51 @@ body
   dd
     font-size 11px
     font-weight 700
+.contact
+  text-align center
+  color #fff
+  font-size 20px
+  font-weight 700
+  margin-top 20px
+  a
+    color #fff
+
+.subscribe
+  background #171717
+  border-radius 5px
+  color #85ca91
+  font-size 20px
+  font-weight 300
+  padding 5px
+  display table
+  margin 0 auto 50px
+  input
+    background transparent
+    border none
+    box-shadow none
+    font-style italic
+    font-size 20px
+    padding 10px
+    color inherit
+  button
+    background #303030
+    border none
+    box-shadow none
+    padding 10px 20px
+    color inherit
+    font-size 20px
+    border-radius inherit
+
+
+.subscribe-label
+  color #85ca91
+  text-align center
+  font-size 23px
+  margin 30px 0 20px
+
+.copyright
+  font-size 11px
+  text-align center
+  margin-bottom 30px
+  color #fff
+  display block
