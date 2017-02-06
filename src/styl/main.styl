@@ -19,6 +19,7 @@ body
   background-position center top
 
 .container
+  width 100%
   max-width 1200px
   margin 0 auto
   padding 0 15px
@@ -270,6 +271,7 @@ body
   color #fff
   input[type="radio"]
     opacity 0
+
 .quest-trigger:checked
   & + .faq-quest
     &:before
@@ -328,3 +330,24 @@ body
   dd
     font-size 15px
     color white
+    
+.partners
+  display table
+  
+.partner
+  display table-cell
+  text-align center
+  img
+    margin 0 5px
+  &:not(:last-child)
+    padding-right 20px
+  &.thanks
+    max-width 175px
+    dt
+      margin-bottom 30px
+  &.support
+    dt
+      margin-bottom 43px
+  dd
+    font-size 11px
+    font-weight 700

@@ -41,7 +41,8 @@ gulp.task('serve', ['js', 'image', 'style'], function() {
     }
   });
   gulp.watch("./*.html").on('change', browserSync.reload);
-  gulp.watch("./src/styl/*.styl", ['style']);
+  gulp.watch("./src/img/**/*", ['image']).on('change', browserSync.reload);
+  gulp.watch("./src/styl/*.styl", ['style']).on('change', browserSync.reload);
 });
 
 
