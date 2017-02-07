@@ -133,7 +133,8 @@ body
   text-align center
   margin-bottom 30px
   +below(520px)
-    display none
+    .main-informations &
+      display none
   li
     display inline-block
     margin 0 10px
@@ -154,6 +155,19 @@ body
     display table-cell
     p, strong
       opacity 0.3
+  +below(520px)
+    width 100%
+    text-align center
+    .mobile, &>ul
+      display block
+      width 100%
+    .mobile
+      margin-bottom 20px
+    li
+      display inline-block
+      width 85px
+      &:not(:last-child)
+        margin-right 20px
 
 .large-date
   position relative
@@ -165,6 +179,19 @@ body
   span
     font-size 60px
     font-weight 300
+  +below(770px)
+    strong
+      font-size 200px
+  +below(600px)
+    padding 40px 0
+    strong
+      font-size 100px
+    span
+      position absolute
+      bottom 20px
+      right 0
+      text-align right
+      font-size 25px
 .video
   position relative
   display block
@@ -408,6 +435,8 @@ body
       color #fff
     dt
       margin-bottom 30px
+    a
+      color inherit
   &.support
     dt
       margin-bottom 43px
@@ -420,19 +449,23 @@ body
   font-size 20px
   font-weight 700
   margin-top 20px
+  +below(600px)
+    font-size 14px
   a
     color #fff
 
 .subscribe
+  position relative
+  display table
   background #171717
   border-radius 5px
   color #85ca91
   font-size 20px
   font-weight 300
   padding 5px
-  display table
   margin 0 auto 50px
   input
+    display table-cell
     background transparent
     border none
     box-shadow none
@@ -440,7 +473,11 @@ body
     font-size 20px
     padding 10px
     color inherit
+    width 70%
+    float left
   button
+    float right
+    display table-cell
     background #303030
     border none
     box-shadow none
@@ -448,6 +485,17 @@ body
     color inherit
     font-size 20px
     border-radius inherit
+  .submit-msg
+    position absolute
+    top 50px
+    left 0
+    font-size 14px
+    font-weight 700
+    padding 5px
+    &.error
+      color red
+    &.valid
+      color error
 
 
 .subscribe-label
@@ -462,3 +510,41 @@ body
   margin-bottom 30px
   color #fff
   display block
+  
++below(600px)
+  .video-container
+    width 100%
+    img
+      width 100%
+      height auto
+  .video:before
+    width 90px
+    height 90px
+  .description.container
+    .col-50
+      width 100%
+      float none
+  .description-highlight
+    text-align center
+  .winner-legend
+    left 15%
+    top 51%
+
++below(770px)
+  .partners
+    display block
+    .partner
+      display block
+      padding 0
+      text-align center
+      margin-bottom 30px
+    .co-director
+      img
+        width 80%
+        max-width 200px
+        height auto
+    .thanks
+      margin 0 auto 30px
+  footer .social-networks
+    img
+      width 50%
