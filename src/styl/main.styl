@@ -156,7 +156,7 @@ body
   li
     display table-cell
     p, strong
-      opacity 0.3
+      opacity 1
   +below(520px)
     width 100%
     text-align center
@@ -174,6 +174,7 @@ body
 .large-date
   position relative
   z-index 2
+  color #FFF
   strong
     font-size 300px
     font-weight 600
@@ -229,7 +230,7 @@ body
     font-size 16px
     z-index 2
     font-weight 300
-    color #686968
+    color #aaa
     margin-bottom 20px
     position relative
   .description-highlight
@@ -252,13 +253,14 @@ body
   position absolute
   text-align center
   font-size 110px
-  font-weight 600
+  font-weight 700
   opacity 0.8
   color #242424
   top 0
   left 0
   right 0
   margin 0 auto
+  letter-spacing 30px
   +above(520px)
     font-size 150px
   +above(720px)
@@ -369,32 +371,33 @@ body
     .quest-title
       color #85ca91
     .quest-response
-      height auto
+      opacity 1
 
 .faq-quest
   position relative
   z-index 9
   display block
-  padding 20px 30px
+  padding 0px 30px 20px
   border-bottom 1px solid #171717
+  cursor pointer
   &:before
     content "+"
     position absolute
     left 0
-    top 20px
+    top 0
     font-size 30px
     line-height 1
     font-weight 700
-    color #171717
+    color #555
 .quest-title
   transition all 500ms
   font-size 20px
   font-weight 600
 
 .quest-response
-  transition all 250ms
+  transition all .9s
   overflow hidden
-  height 0
+  opacity 0
   font-size 15px
   padding-top 10px
   a
@@ -507,6 +510,8 @@ body
   text-align center
   font-size 23px
   margin 30px 0 20px
+  letter-spacing 10px
+  font-weight 700
 
 .copyright
   font-size 11px
