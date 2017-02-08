@@ -23,6 +23,8 @@ body
   max-width 1200px
   margin 0 auto
   padding 0 15px
+  &.second
+    margin 50px auto 100px
   +below(520px)
     header&
       padding 0
@@ -30,7 +32,7 @@ body
 .col-50
   float left
   width 50%
-  padding 0 10px    
+  padding 0 10px
 
 .clearfix
   &:before
@@ -90,7 +92,7 @@ body
       margin-right 20px
       position relative
       top -14px
-  
+
 .header-inscription
   margin 20px 0
   color $cdd-light-green
@@ -137,7 +139,7 @@ body
       display none
   li
     display inline-block
-    margin 0 10px
+    margin 0 30px
 .partner-label
   font-weight 300
   font-size 16px
@@ -326,7 +328,7 @@ body
       &:before
       &:after
         opacity 1
-    
+
 .staff-image
   position relative
   &:before
@@ -347,7 +349,7 @@ body
     bottom 10px
     z-index 2
     transition opacity .8s
-    
+
 .staff-name
   color #fff
   font-size 14px
@@ -368,7 +370,7 @@ body
       color #85ca91
     .quest-response
       height auto
-    
+
 .faq-quest
   position relative
   z-index 9
@@ -395,9 +397,9 @@ body
   height 0
   font-size 15px
   padding-top 10px
-  a 
+  a
     color inherit
-    
+
 .winner-container
   position relative
   padding-bottom 56%
@@ -418,10 +420,10 @@ body
   dd
     font-size 15px
     color white
-    
+
 .partners
   display table
-  
+
 .partner
   display table-cell
   text-align center
@@ -447,12 +449,14 @@ body
   text-align center
   color #fff
   font-size 20px
-  font-weight 700
+  letter-spacing 2px
+  font-weight 400
   margin-top 20px
   +below(600px)
     font-size 14px
   a
     color #fff
+    text-decoration none
 
 .subscribe
   position relative
@@ -510,7 +514,11 @@ body
   margin-bottom 30px
   color #fff
   display block
-  
+  a
+    color #FFF
+    text-decoration underline
+    font-weight 600
+
 +below(600px)
   .video-container
     width 100%
