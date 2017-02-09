@@ -30,7 +30,7 @@ body
 .col-50
   float left
   width 50%
-  padding 0 10px    
+  padding 0 10px
 
 .clearfix
   &:before
@@ -90,7 +90,7 @@ body
       margin-right 20px
       position relative
       top -14px
-  
+
 .header-inscription
   margin 20px 0
   color $cdd-light-green
@@ -227,7 +227,7 @@ body
     font-size 16px
     z-index 2
     font-weight 300
-    color #686968
+    color #dadada
     margin-bottom 20px
     position relative
   .description-highlight
@@ -326,7 +326,7 @@ body
       &:before
       &:after
         opacity 1
-    
+
 .staff-image
   position relative
   &:before
@@ -347,7 +347,7 @@ body
     bottom 10px
     z-index 2
     transition opacity .8s
-    
+
 .staff-name
   color #fff
   font-size 14px
@@ -368,7 +368,7 @@ body
       color #85ca91
     .quest-response
       height auto
-    
+
 .faq-quest
   position relative
   z-index 9
@@ -395,9 +395,9 @@ body
   height 0
   font-size 15px
   padding-top 10px
-  a 
+  a
     color inherit
-    
+
 .winner-container
   position relative
   padding-bottom 56%
@@ -418,10 +418,15 @@ body
   dd
     font-size 15px
     color white
-    
+
 .partners
   display table
-  
+  margin-top 20px
+  .container-title
+    top -80px
+    +below(770px)
+      top -20px
+
 .partner
   display table-cell
   text-align center
@@ -443,6 +448,73 @@ body
   dd
     font-size 11px
     font-weight 700
+
+.host
+  position relative
+  display table
+  width 70%
+  margin-top -280px
+  margin-bottom 140px
+
+  +below(1200px)
+    margin-top -200px
+    width 80%
+
+  +below(1024px)
+    margin-top -150px
+    width 90%
+
+  +below(770px)
+    width 100%
+    margin 0 0 40px 0
+    display block
+
+  .host-image
+    display table-cell
+    +below(770px)
+      display block
+      max-width 100%
+      margin 0 auto
+  .host-details
+    display table-cell
+    padding-left 50px
+    +below(770px)
+      padding-left initial
+
+  .highlight-title
+    display inline-block
+    margin-left -120px
+    margin-top 60px
+    color #fff
+    font-size 55px
+    text-transform uppercase
+    +below(1024px)
+      margin-left -100px
+      font-size 40px
+    +below(770px)
+      margin-left initial
+      margin-top 20px
+      margin-bottom 20px
+      font-size 40px
+      line-height 1.2
+
+    small
+      display block
+      margin-left 120px
+      margin-bottom 20px
+      color #4acb95
+      font-size 22px
+      font-weight 400
+      text-transform initial
+      +below(1024px)
+        margin-left 100px
+      +below(770px)
+        margin 0
+
+  .host-description
+    display inline-block
+    line-height 1.5
+
 .contact
   text-align center
   color #fff
@@ -510,7 +582,7 @@ body
   margin-bottom 30px
   color #fff
   display block
-  
+
 +below(600px)
   .video-container
     width 100%
@@ -529,6 +601,7 @@ body
   .winner-legend
     left 15%
     top 51%
+    right 0
 
 +below(770px)
   .partners
