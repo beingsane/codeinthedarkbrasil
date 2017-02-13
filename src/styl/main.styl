@@ -93,10 +93,27 @@ body
 
 .header-inscription
   margin 20px 0
-  color $cdd-light-green
-  font-weight 700
-  line-height 1.2
-  font-size 14px
+  a
+    display inline-block
+    padding 15px 35px
+    margin-bottom 15px
+    background-color $cdd-light-green
+    color #fff
+    font-weight 700
+    line-height 1.2
+    font-size 18px
+    text-decoration none
+    text-transform uppercase
+    border-radius 6px
+    box-shadow 1px 1px 8px 0 rgba(255,255,255, .4)
+    border 1px solid rgba(#fff, .4)
+    letter-spacing 0.4px
+    +below(770px)
+      padding 10px 30px
+      font-size 17px
+    +below(520px)
+      padding 10px 15px
+      font-size 14px
   +above(720px)
     margin 30px 0
     font-size 20px
